@@ -8,13 +8,14 @@ var cors = require('cors');
 
 // CORS options
 var corsOptions = {
-  origin: ['http://localhost:3000','https://hardyvalen.azurewebsites.net'],
+  // origin: ['http://localhost:3000','http://180.245.14.249','https://hardyvalen.azurewebsites.net'],
+  origin: "*",
   optionsSuccessStatus: 200,
   methods: "GET,POST",
 }
 
 // Connect to database
-const sequelize = require("./db/connect");
+// const sequelize = require("./db/connect");
 
 // Express Program
 var app = express();
