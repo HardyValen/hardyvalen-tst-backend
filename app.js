@@ -8,8 +8,8 @@ var cors = require('cors');
 
 // CORS options
 var corsOptions = {
-  // origin: ['http://localhost:3000','http://180.245.14.249','https://hardyvalen.azurewebsites.net'],
-  origin: "*",
+  origin: ['http://localhost:3000','http://180.245.14.249','https://hardyvalen.azurewebsites.net'],
+  // origin: "*",
   optionsSuccessStatus: 200,
   methods: "GET,POST",
 }
