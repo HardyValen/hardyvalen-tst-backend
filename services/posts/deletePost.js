@@ -11,7 +11,7 @@ module.exports = async ({id}) => {
     await post.destroy(
       {
         where: {
-          "post-id": id
+          "post_id": id
         }
       }, 
       { transaction: t }

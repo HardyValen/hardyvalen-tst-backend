@@ -8,7 +8,7 @@ const post = require('../../db/models/post')(sequelize, DataTypes);
 module.exports = async (id) => {
   return post.findOne({
     where: {
-      "post-id": id
+      "post_id": id
     }
   });
 }

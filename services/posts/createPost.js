@@ -9,10 +9,10 @@ module.exports = async ({title, body, author}) => {
   let t = await sequelize.transaction();
   try {
     await post.create({
-      "post-title": title,
-      "post-body": body,
-      "post-author": author,
-      "post-created-at": new Date()
+      "post_title": title,
+      "post_body": body,
+      "post_author": author,
+      "post_created_at": new Date()
     }, { transaction: t });
 
     await t.commit();

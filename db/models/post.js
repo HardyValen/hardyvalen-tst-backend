@@ -9,22 +9,25 @@ module.exports = (sequelize, DataTypes) => {
   };
   
   Post.init({
-    "post-id": {
+    "post_id": {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
       allowNull: false
     },
-    "post-title": {
-      type: DataTypes.STRING
-    },
-    "post-body": {
-      type: DataTypes.STRING
-    },
-    "post-author": {
+    "post_title": {
       type: DataTypes.STRING,
+      allowNull: false
     },
-    "post-created-at": {
+    "post_body": {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    "post_author": {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    "post_created_at": {
       type: DataTypes.DATE,
       allowNull: false
     }
